@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forgetpassword.ForgetController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #151B54;">
+         <children>
+            <Label layoutX="195.0" layoutY="52.0" text="Forgotten Password" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="34.0" />
+               </font>
+            </Label>
+            <TextField layoutX="250.0" layoutY="158.0" prefHeight="25.0" prefWidth="200.0" promptText="NID">
+               <font>
+                  <Font name="Symbol" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField layoutX="250.0" layoutY="218.0" prefHeight="25.0" prefWidth="200.0" promptText="Password">
+               <font>
+                  <Font name="Symbol" size="12.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="250.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Submit" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
