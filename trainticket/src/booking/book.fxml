@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #151B54;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booking.bookController">
+   <children>
+      <Button fx:id="A1" layoutX="77.0" layoutY="30.0" mnemonicParsing="false" onAction="#bta1" prefHeight="30.0" prefWidth="50.0" text="A1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="A2" layoutX="147.0" layoutY="30.0" mnemonicParsing="false" onAction="#bta2" prefHeight="30.0" prefWidth="50.0" text="A2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="A3" layoutX="322.0" layoutY="30.0" mnemonicParsing="false" onAction="#bta3" prefHeight="30.0" prefWidth="50.0" text="A3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="A4" layoutX="392.0" layoutY="30.0" mnemonicParsing="false" onAction="#bta4" prefHeight="30.0" prefWidth="50.0" text="A4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="B1" layoutX="77.0" layoutY="65.0" mnemonicParsing="false" onAction="#btb1" prefHeight="30.0" prefWidth="50.0" text="B1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="B2" layoutX="147.0" layoutY="65.0" mnemonicParsing="false" onAction="#btb2" prefHeight="30.0" prefWidth="50.0" text="B2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="B3" layoutX="322.0" layoutY="65.0" mnemonicParsing="false" onAction="#btb3" prefHeight="30.0" prefWidth="50.0" text="B3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="B4" layoutX="392.0" layoutY="65.0" mnemonicParsing="false" onAction="#btb4" prefHeight="30.0" prefWidth="50.0" text="B4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="C1" layoutX="77.0" layoutY="100.0" mnemonicParsing="false" onAction="#btc1" prefHeight="30.0" prefWidth="50.0" text="C1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="C2" layoutX="147.0" layoutY="100.0" mnemonicParsing="false" onAction="#btc2" prefHeight="30.0" prefWidth="50.0" text="C2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="C3" layoutX="322.0" layoutY="100.0" mnemonicParsing="false" onAction="#btc3" prefHeight="30.0" prefWidth="50.0" text="C3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="C4" layoutX="392.0" layoutY="100.0" mnemonicParsing="false" onAction="#btc4" prefHeight="30.0" prefWidth="50.0" text="C4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="D1" layoutX="77.0" layoutY="135.0" mnemonicParsing="false" onAction="#btd1" prefHeight="30.0" prefWidth="50.0" text="D1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="D2" layoutX="147.0" layoutY="135.0" mnemonicParsing="false" onAction="#btd2" prefHeight="30.0" prefWidth="50.0" text="D2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="D3" layoutX="322.0" layoutY="135.0" mnemonicParsing="false" onAction="#btd3" prefHeight="30.0" prefWidth="50.0" text="D3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="D4" layoutX="392.0" layoutY="135.0" mnemonicParsing="false" onAction="#btd4" prefHeight="30.0" prefWidth="50.0" text="D4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="E1" layoutX="77.0" layoutY="170.0" mnemonicParsing="false" onAction="#bte1" prefHeight="30.0" prefWidth="50.0" text="E1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="E2" layoutX="147.0" layoutY="170.0" mnemonicParsing="false" onAction="#bte2" prefHeight="30.0" prefWidth="50.0" text="E2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="E3" layoutX="322.0" layoutY="170.0" mnemonicParsing="false" onAction="#bte3" prefHeight="30.0" prefWidth="50.0" text="E3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="E4" layoutX="392.0" layoutY="170.0" mnemonicParsing="false" onAction="#bte4" prefHeight="30.0" prefWidth="50.0" text="E4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="F1" layoutX="77.0" layoutY="205.0" mnemonicParsing="false" onAction="#btf1" prefHeight="30.0" prefWidth="50.0" text="F1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="F2" layoutX="147.0" layoutY="205.0" mnemonicParsing="false" onAction="#btf2" prefHeight="30.0" prefWidth="50.0" text="F2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="F3" layoutX="322.0" layoutY="205.0" mnemonicParsing="false" onAction="#btf3" prefHeight="30.0" prefWidth="50.0" text="F3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="F4" layoutX="392.0" layoutY="205.0" mnemonicParsing="false" onAction="#btf4" prefHeight="30.0" prefWidth="50.0" text="F4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="G1" layoutX="77.0" layoutY="240.0" mnemonicParsing="false" onAction="#btg1" prefHeight="30.0" prefWidth="50.0" text="G1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="G2" layoutX="147.0" layoutY="240.0" mnemonicParsing="false" onAction="#btg2" prefHeight="30.0" prefWidth="50.0" text="G2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="G3" layoutX="322.0" layoutY="240.0" mnemonicParsing="false" onAction="#btg3" prefHeight="30.0" prefWidth="50.0" text="G3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="G4" layoutX="392.0" layoutY="240.0" mnemonicParsing="false" onAction="#btg4" prefHeight="30.0" prefWidth="50.0" text="G4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="H1" layoutX="77.0" layoutY="275.0" mnemonicParsing="false" onAction="#bth1" prefHeight="30.0" prefWidth="50.0" text="H1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="H2" layoutX="147.0" layoutY="275.0" mnemonicParsing="false" onAction="#bth2" prefHeight="30.0" prefWidth="50.0" text="H2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="H3" layoutX="322.0" layoutY="275.0" mnemonicParsing="false" onAction="#bth3" prefHeight="30.0" prefWidth="50.0" text="H3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="H4" layoutX="392.0" layoutY="275.0" mnemonicParsing="false" onAction="#bth4" prefHeight="30.0" prefWidth="50.0" text="H4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="I1" layoutX="77.0" layoutY="310.0" mnemonicParsing="false" onAction="#bti1" prefHeight="30.0" prefWidth="50.0" text="I1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="I2" layoutX="147.0" layoutY="310.0" mnemonicParsing="false" onAction="#bti2" prefHeight="30.0" prefWidth="50.0" text="I2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="I3" layoutX="322.0" layoutY="310.0" mnemonicParsing="false" onAction="#bti3" prefHeight="30.0" prefWidth="50.0" text="I3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="I4" layoutX="392.0" layoutY="310.0" mnemonicParsing="false" onAction="#bti4" prefHeight="30.0" prefWidth="50.0" text="I4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="J1" layoutX="77.0" layoutY="345.0" mnemonicParsing="false" onAction="#btj1" prefHeight="30.0" prefWidth="50.0" text="J1">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="J2" layoutX="147.0" layoutY="345.0" mnemonicParsing="false" onAction="#btj2" prefHeight="30.0" prefWidth="50.0" text="J2">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="J3" layoutX="322.0" layoutY="345.0" mnemonicParsing="false" onAction="#btj3" prefHeight="30.0" prefWidth="50.0" text="J3">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="J4" layoutX="392.0" layoutY="345.0" mnemonicParsing="false" onAction="#btj4" prefHeight="30.0" prefWidth="50.0" text="J4">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="tktsubmit" layoutX="495.0" layoutY="335.0" mnemonicParsing="false" onAction="#tktsubmit" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #00b400;" text="Submit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="nprice" editable="false" layoutX="495.0" layoutY="273.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <Label layoutX="495.0" layoutY="96.0" text="Train name" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ntrain" editable="false" layoutX="495.0" layoutY="131.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <TextField fx:id="nsit" editable="false" layoutX="495.0" layoutY="172.0" promptText="Sit">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <Button layoutX="226.0" layoutY="235.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" style="-fx-background-color: #00b400;" text="Available">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button layoutX="226.0" layoutY="298.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" style="-fx-background-color: ff4040;" text="Booked">
+         <effect>
+            <Lighting diffuseConstant="1.89" specularConstant="0.0" specularExponent="26.72" surfaceScale="10.0">
+               <bumpInput>
+                  <Bloom>
+                     <input>
+                        <ColorAdjust />
+                     </input>
+                  </Bloom>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.5960784554481506" blue="0.16078431904315948" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ChoiceBox fx:id="coach" layoutX="226.0" layoutY="32.0" prefHeight="25.0" prefWidth="66.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Button fx:id="price" layoutX="495.0" layoutY="223.0" mnemonicParsing="false" onAction="#setprice" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #00b400;" text="Ticket Price :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="reset" layoutX="495.0" layoutY="36.0" mnemonicParsing="false" onAction="#resetbtn" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #00b400;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="bck" layoutX="15.0" layoutY="29.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
