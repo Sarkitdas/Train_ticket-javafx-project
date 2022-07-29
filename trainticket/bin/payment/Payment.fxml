@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payment.Pay">
+   <children>
+      <AnchorPane layoutX="308.0" prefHeight="400.0" prefWidth="423.0" style="-fx-background-color: #151B54;" />
+      <Label layoutX="465.0" layoutY="33.0" prefHeight="69.0" prefWidth="205.0" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="Colonna MT" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="461.0" layoutY="126.0" prefHeight="30.0" prefWidth="190.0" promptText="Name :">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phone" layoutX="461.0" layoutY="181.0" prefHeight="30.0" prefWidth="190.0" promptText="Phone :">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="trid" layoutX="461.0" layoutY="236.0" prefHeight="30.0" prefWidth="190.0" promptText="Transaction no:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="378.0" layoutY="125.0" prefHeight="30.0" prefWidth="71.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="180.0" prefHeight="30.0" prefWidth="71.0" text="Phone :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="233.0" prefHeight="30.0" prefWidth="129.0" text="Transaction :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="fsubmit" layoutX="462.0" layoutY="299.0" mnemonicParsing="false" onAction="#fnlsubmit" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: dd3439;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/secure-payment.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
