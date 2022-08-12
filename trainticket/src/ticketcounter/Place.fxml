@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #151B54;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketcounter.Ticketcounter">
+   <children>
+      <AnchorPane layoutX="410.0" layoutY="19.0" prefHeight="365.0" prefWidth="267.0">
+         <children>
+            <Label ellipsisString="" layoutX="16.0" layoutY="20.0" prefHeight="24.0" prefWidth="62.0" text="From : :" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="from" editable="true" layoutX="96.0" layoutY="20.0" prefWidth="150.0" />
+            <DatePicker fx:id="date" layoutX="96.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="19.0" layoutY="145.0" text="Date :" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="search" layoutX="96.0" layoutY="202.0" mnemonicParsing="false" onAction="#check" prefHeight="31.0" prefWidth="149.0" text="Search">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label ellipsisString="" layoutX="39.0" layoutY="82.0" text="To :" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="to" editable="true" layoutX="96.0" layoutY="81.0" prefWidth="150.0" promptText="Destination" />
+            <ImageView fitHeight="106.0" fitWidth="173.0" layoutX="84.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableview" layoutX="33.0" layoutY="39.0" prefHeight="224.0" prefWidth="359.0" style="-fx-background-color: #00FF00;">
+        <columns>
+          <TableColumn fx:id="trainname" prefWidth="140.0" text="Train" />
+          <TableColumn fx:id="derived" prefWidth="83.33332824707031" text="Diparture" />
+            <TableColumn fx:id="arrived" prefWidth="78.66668701171875" text="Arrived" />
+            <TableColumn fx:id="price" prefWidth="64.6666259765625" text="Price" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </TableView>
+      <Label fx:id="iid" disable="true" layoutX="610.0" layoutY="14.0" text="userid" textFill="#151b54" />
+      <Button fx:id="placesubmit" layoutX="33.0" layoutY="329.0" mnemonicParsing="false" onAction="#placesubmit" prefHeight="41.0" prefWidth="149.0" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="ticket" editable="false" layoutX="33.0" layoutY="279.0" prefHeight="29.0" prefWidth="359.0" promptText="Please Select a train!">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>
